@@ -30,5 +30,3 @@
 
 - [TeyvatGuide](https://github.com/BTMuli/TeyvatGuide)：材料资料、分类及采集实现参考，见 [MIT 声明](THIRD_PARTY/TeyvatGuide-LICENSE)。
 - [Yae](https://github.com/HolographicHat/Yae)：背包采集组件，见 [GPL-3.0 声明](THIRD_PARTY/Yae-LICENSE)。
-
-发布时需提供与 Yae 二进制匹配的对应源码，并确认图标等第三方资源的使用授权。
