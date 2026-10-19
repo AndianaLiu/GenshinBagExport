@@ -2,14 +2,14 @@
 
 <img src="Assets/Keqing.png" width="96" alt="Genshin Bag Export">
 
-原神背包导出工具，将材料和货币整理为一个 Excel 文件。
+原神背包导出工具，将背包材料整理为一个 Excel 文件。
 
 **v7.1.0 · 适配原神国服官服 7.1.0 · 基于 TeyvatGuide 0.12.5 资料与采集配置**
 
 ## 功能
 
 - 读取游戏背包，支持 JSON 导入、导出与分类预览。
-- 材料按分类分别导出到 Sheet，货币单独一个 Sheet。
+- 材料按分类分别导出到不同 Sheet。
 - 自动保存快照，每个 UID 保留最近 10 份不同库存。
 
 ## 使用
