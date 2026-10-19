@@ -4,7 +4,7 @@ param(
 )
 $ErrorActionPreference = 'Stop'
 $folder = Join-Path $PSScriptRoot "release/$Edition"
-$exe = Join-Path $folder 'GenshinBagExport-v7.1.0.exe'
+$exe = Join-Path $folder 'GenshinBagExport.exe'
 if (!(Test-Path -LiteralPath $exe)) { throw "Missing application: $exe" }
 $shell = New-Object -ComObject WScript.Shell
 $path = Join-Path $Destination "Genshin Bag Export ($Edition).lnk"

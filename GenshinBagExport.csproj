@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <AssemblyName>GenshinBagExport-v7.1.0</AssemblyName>
+    <AssemblyName>GenshinBagExport</AssemblyName>
     <RootNamespace>GenshinBagExport</RootNamespace>
     <Product>Genshin Bag Export</Product>
     <Title>Genshin Bag Export</Title>

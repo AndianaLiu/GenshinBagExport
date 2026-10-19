@@ -16,7 +16,7 @@
 
 需要 Windows x64 和 [.NET 9 桌面运行时](https://dotnet.microsoft.com/download/dotnet/9.0)。
 
-1. 解压完整程序目录，以管理员身份运行 `GenshinBagExport-v7.1.0.exe`。
+1. 解压完整程序目录，以管理员身份运行 `GenshinBagExport.exe`。
 2. 关闭游戏，选择游戏本体 `YuanShen.exe`，填写 UID。
 3. 点击“读取背包”，登录进入游戏，等待读取完成后导出 Excel 或 JSON。
 
