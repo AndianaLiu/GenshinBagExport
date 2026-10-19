@@ -1,0 +1,7 @@
+[
+  {"item_id":201,"kind":"material","info":{"count":12345}},
+  {"item_id":202,"kind":"material","info":{"count":9876543}},
+  {"item_id":100013,"kind":"material","info":{"count":24}},
+  {"item_id":99999999,"kind":"material","info":{"count":3}},
+  {"item_id":11501,"kind":"weapon","info":{"level":90}}
+]

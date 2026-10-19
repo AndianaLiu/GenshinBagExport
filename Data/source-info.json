@@ -1,0 +1,14 @@
+{
+  "sourceVersion": "0.12.5",
+  "checkedOn": "2026-10-19",
+  "gameVersion": "7.1.0",
+  "server": "国服官服",
+  "dllSha256": "03CA64C077E4A26BAFE7149FE587BD574C77F69AACEB5A3DF454B15FBFDA6AF3",
+  "comparison": "内嵌采集配置及 DLL 与此前 0.12.3 相同",
+  "materialCatalogSource": "https://raw.githubusercontent.com/BTMuli/TeyvatGuide/v0.12.5/src/data/WIKI/material/material.json",
+  "materialCatalogVersion": "0.12.5",
+  "materialCatalogEntries": 4726,
+  "materialCatalogSha256": "8D201A264C18906811FACA89E33D0098AB9C119368DE7E02026E5D24B8491E60",
+  "validation": "离线构建和样例验证；未执行真实游戏采集",
+  "configSource": "TeyvatGuide 0.12.5 安装包内嵌配置"
+}

@@ -1,0 +1,17 @@
+bin/
+obj/
+dist/
+release/
+checks/bin/
+checks/obj/
+checks/runs/
+checks/*.xlsx
+checks/*.json
+checks/*.png
+
+# 本地个人设置与私有模板
+LocalSettings.json
+template-tools/
+*.user
+*.suo
+*.pdb

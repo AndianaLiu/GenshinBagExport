@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>GenshinBagExport-v7.1.0</AssemblyName>
+    <RootNamespace>GenshinBagExport</RootNamespace>
+    <Product>Genshin Bag Export</Product>
+    <Title>Genshin Bag Export</Title>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <PlatformTarget>x64</PlatformTarget>
+    <ApplicationIcon>Assets/Keqing.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Version>7.1.0</Version>
+    <AssemblyVersion>7.1.0.0</AssemblyVersion>
+    <FileVersion>7.1.0.0</FileVersion>
+    <InformationalVersion>$(Version)</InformationalVersion>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+    <EnableTemplateCopy Condition="'$(EnableTemplateCopy)' == ''">false</EnableTemplateCopy>
+    <DefineConstants Condition="'$(EnableTemplateCopy)' == 'true'">$(DefineConstants);TEMPLATE_COPY</DefineConstants>
+    <PathMap>$(MSBuildProjectDirectory)=/_/GenshinBagExport</PathMap>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="checks/**/*.cs" />
+    <Resource Include="Assets/Keqing.ico" />
+    <Content Include="Data/material.json;Data/source-info.json;Data/teyvatguide-native-config.json;Native/YaeAchievementLib.dll;THIRD_PARTY/**/*" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <!-- default 不编译模板或个人设置代码。 -->
+  <ItemGroup Condition="'$(EnableTemplateCopy)' != 'true'">
+    <Compile Remove="TemplateExport.cs;PrivateSettings.cs" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(EnableTemplateCopy)' == 'true'">
+    <Content Include="Data/template-map.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="LocalSettings.json" CopyToOutputDirectory="PreserveNewest" Condition="Exists('LocalSettings.json')" />
+  </ItemGroup>
+</Project>
