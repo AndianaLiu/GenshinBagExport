@@ -1,14 +1,15 @@
 {
-  "sourceVersion": "0.12.5",
-  "checkedOn": "2026-10-19",
-  "gameVersion": "7.1.0",
+  "sourceVersion": "0.13.0",
+  "checkedOn": "2026-11-14",
+  "gameVersion": "7.2.0",
   "server": "国服官服",
   "dllSha256": "03CA64C077E4A26BAFE7149FE587BD574C77F69AACEB5A3DF454B15FBFDA6AF3",
-  "comparison": "内嵌采集配置及 DLL 与此前 0.12.3 相同",
-  "materialCatalogSource": "https://raw.githubusercontent.com/BTMuli/TeyvatGuide/v0.12.5/src/data/WIKI/material/material.json",
-  "materialCatalogVersion": "0.12.5",
-  "materialCatalogEntries": 4726,
-  "materialCatalogSha256": "8D201A264C18906811FACA89E33D0098AB9C119368DE7E02026E5D24B8491E60",
-  "validation": "离线构建和样例验证；未执行真实游戏采集",
-  "configSource": "TeyvatGuide 0.12.5 安装包内嵌配置"
+  "comparison": "背包命令号和采集偏移已更新；Yae DLL 的 SHA-256 与 0.12.5 相同",
+  "materialCatalogSource": "https://raw.githubusercontent.com/BTMuli/TeyvatGuide/v0.13.0/src/data/WIKI/material/material.json",
+  "materialCatalogVersion": "0.13.0",
+  "materialCatalogEntries": 4813,
+  "materialCatalogSha256": "D207CBE0DE9B63777A7F3EC099E066FBB453CAF583742A451F42AB736D29AC35",
+  "validation": "通过离线构建、样例回归及公开版检查；未执行真实游戏采集",
+  "configSource": "TeyvatGuide v0.13.0 官方 Windows x64 MSI 内 TeyvatGuide.exe 内嵌配置",
+  "configSha256": "C7A8E6CD3F3298834FE738B12DB9E3F82F5D2F8C8ADBD5FD91AE97069AD31ADF"
 }

@@ -26,8 +26,8 @@ public sealed class CaptureService
             throw new InvalidOperationException("请先关闭已运行的原神，再开始采集。");
         string iniPath = Path.Combine(Path.GetDirectoryName(exe)!, "config.ini");
         if (!File.Exists(iniPath) || !System.Text.RegularExpressions.Regex.IsMatch(File.ReadAllText(iniPath),
-                @"(?m)^\s*game_version\s*=\s*7\.1\.0\s*$"))
-            throw new InvalidOperationException("当前配置仅验证过国服 7.1.0；游戏 config.ini 版本不匹配或无法读取。");
+                @"(?m)^\s*game_version\s*=\s*7\.2\.0\s*$"))
+            throw new InvalidOperationException("当前配置仅适用于国服 7.2.0；游戏 config.ini 版本不匹配或无法读取。");
         using var config = JsonDocument.Parse(File.ReadAllText(Path.Combine(AppContext.BaseDirectory, "Data", "teyvatguide-native-config.json")));
         var native = config.RootElement.GetProperty("nativeConfig");
         uint storeCmd = native.GetProperty("storeCmdId").GetUInt32();
@@ -101,7 +101,7 @@ public sealed class CaptureService
                         items.Add(new { item_id = id, kind = "material", info = new { count = (long)value } });
                     }
                     writer.Write(true); writer.Flush();
-                    return JsonSerializer.Serialize(new { uid, capturedAt = DateTimeOffset.Now, gameVersion = "7.1.0", items }, new JsonSerializerOptions { WriteIndented = true });
+                    return JsonSerializer.Serialize(new { uid, capturedAt = DateTimeOffset.Now, gameVersion = "7.2.0", items }, new JsonSerializerOptions { WriteIndented = true });
                 default: throw new InvalidDataException("收到不支持的采集命令。");
             }
         }

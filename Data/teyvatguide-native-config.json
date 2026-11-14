@@ -1,34 +1,34 @@
 {
-  "id": 11,
-  "status": 3,
-  "totalProgress": 10,
-  "currentProgress": 12,
-  "finishTimestamp": 14,
+  "id": 9,
+  "status": 7,
+  "totalProgress": 8,
+  "currentProgress": 6,
+  "finishTimestamp": 4,
   "nativeConfig": {
-    "storeCmdId": 22160,
-    "achievementCmdId": 24317,
+    "storeCmdId": 20892,
+    "achievementCmdId": 4164,
     "methodRva": {
       "chinese": {
-        "updateNormalProp": 193063152,
-        "newString": 4927312,
-        "findGameObject": 21313312,
-        "eventSystemUpdate": 139414144,
-        "simulatePointerClick": 139413552,
-        "toInt32": 425587504,
-        "tcpStatePtr": 91775080,
-        "sharedInfoPtr": 91775072,
-        "decompress": 115234864
+        "updateNormalProp": 303533488,
+        "newString": 4964032,
+        "findGameObject": 21383168,
+        "eventSystemUpdate": 141048832,
+        "simulatePointerClick": 141048624,
+        "toInt32": 431309216,
+        "tcpStatePtr": 92723168,
+        "sharedInfoPtr": 92723176,
+        "decompress": 116455792
       },
       "oversea": {
-        "updateNormalProp": 192975824,
-        "newString": 4923616,
-        "findGameObject": 21309216,
-        "eventSystemUpdate": 139364928,
-        "simulatePointerClick": 139366160,
-        "toInt32": 424856608,
-        "tcpStatePtr": 91771976,
-        "sharedInfoPtr": 91771968,
-        "decompress": 115226304
+        "updateNormalProp": 303587968,
+        "newString": 4967792,
+        "findGameObject": 21387264,
+        "eventSystemUpdate": 141060368,
+        "simulatePointerClick": 141059200,
+        "toInt32": 431517696,
+        "tcpStatePtr": 92725136,
+        "sharedInfoPtr": 92725144,
+        "decompress": 116454560
       }
     }
   }
